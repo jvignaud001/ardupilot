@@ -917,16 +917,8 @@ private:
     void sport_run();
     bool stabilize_init(bool ignore_checks);
     void stabilize_run();
-    bool ims1_init(bool ignore_checks); // Custom IMS Flight Mode
-    void ims1_run();                    // Custom IMS Flight Mode
-    bool ims2_init(bool ignore_checks); // Custom IMS Flight Mode
-    void ims2_run();                    // Custom IMS Flight Mode
-    bool ims3_init(bool ignore_checks); // Custom IMS Flight Mode
-    void ims3_run();                    // Custom IMS Flight Mode
-    bool ims4_init(bool ignore_checks); // Custom IMS Flight Mode
-    void ims4_run();                    // Custom IMS Flight Mode
-    bool ims5_init(bool ignore_checks); // Custom IMS Flight Mode
-    void ims5_run();                    // Custom IMS Flight Mode
+    bool ims_init(bool ignore_checks); // Custom IMS Flight Mode
+    void ims_run();                    // Custom IMS Flight Mode
     void crash_check();
     void parachute_check();
     void parachute_release();

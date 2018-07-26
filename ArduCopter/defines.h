@@ -107,11 +107,7 @@ enum control_mode_t {
     THROW =        18,  // throw to launch mode using inertial/GPS system, no pilot input
     AVOID_ADSB =   19,  // automatic avoidance of obstacles in the macro scale - e.g. full-sized aircraft
     GUIDED_NOGPS = 20,  // guided mode but only accepts attitude and altitude
-	IMS1 =		   31,	// Custom Flight Mode create by IMS Lab at Bordeaux University
-	IMS2 =		   32,	// Custom Flight Mode create by IMS Lab at Bordeaux University
-	IMS3 =		   33,	// Custom Flight Mode create by IMS Lab at Bordeaux University
-    IMS4 =		   34,	// Custom Flight Mode create by IMS Lab at Bordeaux University
-    IMS5 =		   35,	// Custom Flight Mode create by IMS Lab at Bordeaux University
+	IMS =		   31,	// Custom Flight Mode create by IMS Lab at Bordeaux University
 };
 
 enum mode_reason_t {
