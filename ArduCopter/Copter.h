@@ -949,6 +949,7 @@ private:
     ModeAcro_Heli mode_acro;
 #else
     ModeAcro mode_acro;
+    ModeIMS mode_ims;   // Mode customisé IMS
 #endif
 #endif
     ModeAltHold mode_althold;

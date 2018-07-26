@@ -42,6 +42,9 @@ Copter::Mode *Copter::mode_from_mode_num(const uint8_t mode)
             ret = &mode_acro;
             break;
 #endif
+        case IMS:
+            ret = &mode_ims;
+            break;
 
         case STABILIZE:
             ret = &mode_stabilize;
