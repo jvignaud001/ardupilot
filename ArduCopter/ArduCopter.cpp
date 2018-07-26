@@ -257,6 +257,7 @@ void Copter::fast_loop()
 #endif //HELI_FRAME
 
     // send outputs to the motors library
+    // IMS TEMP
     motors_output();
 
     // Inertial Nav
