@@ -1114,8 +1114,8 @@ public:
 
 protected:
 
-    const char *name() const override { return "IMS"; }
-    const char *name4() const override { return "IMS"; }
+    const char *name() const override { return "Mode_IMS"; }
+    const char *name4() const override { return "IMS1"; }
 
 private:
 

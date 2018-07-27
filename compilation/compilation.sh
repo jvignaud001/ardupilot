@@ -20,6 +20,7 @@ else
 				./waf configure --board=navio2	#on configure pour le flight controler Navio2
 				echo "Compilation du fichier"
 				./waf --targets bin/arducopter #compilation dans le repertoire build/navio2/bin/
+				mv build/navio2/bin/arducopter build/navio2/bin/arducopter-quad #on renomme arducopter en arducopter-quad
 				echo ""
 				cd compilation
 				chmod +x .kill_process.sh #on rend le fichier executable
@@ -30,7 +31,7 @@ else
 				sleep 2
 				echo "Envoi des fichiers vers la RPi"
 				chmod +x .envoi_drone.sh #on rend le fichier executable
-				./.envoi_drone.sh #on envoie le fichier au drone arducopter pendant que le fichier executer en arriere plan ne tourne plus et avant que le drone redemarre
+				./.envoi_drone.sh #on envoie le fichier au drone arducopter-quad pendant que le fichier executer en arriere plan ne tourne plus et avant que le drone redemarre
 				chmod +x .envoi_fichier.sh #on rend le fichier executable
 				./.envoi_fichier.sh #on envoie le fichier parametre au drone pendant que le fichier executer en arriere plan ne tourne plus et avant que le drone redemarre
 				sleep 4
@@ -57,6 +58,7 @@ else
 			./waf configure --board=navio2	#on configure pour le flight controler Navio2
 			echo "Compilation du fichier"
 			./waf --targets bin/arducopter #compilation dans le repertoire build/navio2/bin/
+			mv build/navio2/bin/arducopter build/navio2/bin/arducopter-quad #on renomme arducopter en arducopter-quad
 			echo ""
 			cd compilation
 			chmod +x .kill_process.sh #on rend le fichier executable
@@ -84,7 +86,8 @@ else
 		waf="$PWD/modules/waf/waf-light" #on donne un nom plus court au compilateur
 		./waf configure --board=navio2	#on configure pour le flight controler Navio2
 		echo "Compilation du fichier"
-		./waf --targets bin/arducopter #compilation dans le repertoire build/navio2/bin/	
+		./waf --targets bin/arducopter #compilation dans le repertoire build/navio2/bin/
+		mv build/navio2/bin/arducopter build/navio2/bin/arducopter-quad #on renomme arducopter en arducopter-quad
 	fi
 		
 fi
